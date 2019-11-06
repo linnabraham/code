@@ -18,6 +18,24 @@ os.chdir('/usr/local/lib/python3.6/dist-packages/keras/backend')
 ```
 then copy and overwrite it using:
 ```%%writefile __init__.py```
+#### Use tensorboard in colab notebook
+From a different notebook run the following code
+```py
+try:
+  # %tensorflow_version only exists in Colab.
+  %tensorflow_version 1.x
+except Exception:
+  pass
+
+# Load the TensorBoard notebook extension
+%load_ext tensorboard
+
+import tensorflow as tf
+import datetime
+
+%tensorboard --logdir <path>
+```
+
 ### Matplotlib syntax
 change figure size globally for notebook
 
