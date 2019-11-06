@@ -34,3 +34,7 @@ shift 6 to move to beginn of line
 ctrl -b pg up  
 ctrl -f pg down  
 ```
+#### To temporarily visit a previous state of your repo
+```git
+git checkout  <commit id>
+```
