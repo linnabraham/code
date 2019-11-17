@@ -35,7 +35,15 @@ import datetime
 
 %tensorboard --logdir <path>
 ```
+#### Mount google drive in colab 
+```python
+from google.colab import drive
+drive.mount('/content/drive/')
 
+# upload files from a google supported browser
+from google.colab import files
+files.upload()
+```
 ### Matplotlib syntax
 change figure size globally for notebook
 
@@ -52,6 +60,11 @@ shift 6 to move to beginn of line
 ctrl -b pg up  
 ctrl -f pg down  
 ```
+#### Using Vim
+To copy and paste content from one file to another file in vim.  
+
+Edit the first file, yanking the text you want. Then open your second file from within vim (:e /path/to/other/file) and paste it.  
+
 #### To temporarily visit a previous state of your repo
 ```git
 git checkout  <commit id>
