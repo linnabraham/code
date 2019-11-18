@@ -68,4 +68,14 @@ Edit the first file, yanking the text you want. Then open your second file from 
 #### To temporarily visit a previous state of your repo
 ```git
 git checkout  <commit id>
+
+# change git remote url from https to ssh 
+git remote set-url origin  <ssh url>
 ```
+#### Use dd command for creating bootable linux usb
+```bash
+sudo dd if=path-to-iso of=/dev/sdb bs=1M --status=progress
+```
+use ```sync``` command to check if write to usb has completed.
+If sync exits without erros the usb can be unplugged safely.
+
