@@ -65,6 +65,8 @@ To copy and paste content from one file to another file in vim.
 
 Edit the first file, yanking the text you want. Then open your second file from within vim (:e /path/to/other/file) and paste it.  
 
+Select all text in a file
+```ggVG```
 #### To temporarily visit a previous state of your repo
 ```git
 git checkout  <commit id>
@@ -78,4 +80,4 @@ sudo dd if=path-to-iso of=/dev/sdb bs=1M --status=progress
 ```
 use ```sync``` command to check if write to usb has completed.
 If sync exits without erros the usb can be unplugged safely.
-
+The bootable usb can be formated using gparted.
