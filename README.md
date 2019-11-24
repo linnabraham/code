@@ -55,12 +55,16 @@ change figure size globally for notebook
 ```gg``` goes to beginning of file  
 ```G``` goes to end of file  
 ```j, k, h, l```  goes down,up,left, right  
-```shift 6``` to move to beginning of line  
+```shift+6``` move to beginning of line  
+```shift+$``` move to end of line
 ```ctrl -b``` pg up  
 ```ctrl -f```  pg down  
 ```\"+yy``` copy to system clipboard  
 ```:e /path/to/other/file``` To open a second file from within vim  
 ```ggVG``` Select all text in a file  
+```:s/search/replace``` to replace first occurence of a word in the current line.
+Prepend with ```%``` to search whole text and append with ```/g``` to replace all
+occurences in a line. Search can be a ```regex``` pattern.
 
 
 #### Using Markdown
