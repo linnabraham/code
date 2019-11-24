@@ -12,6 +12,10 @@
 	+ git for version control
 	+ jupyter
 	+ colab + git + github
++ searching
+	+ regex
+	+ grep
+	+ vim search and replace
 + dotfile management
 	+ bare git + github
 + system monitor
