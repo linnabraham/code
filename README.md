@@ -108,3 +108,12 @@ gpg -r linn.official@gmail.com -e <filename>
 #decrypt using gpg
 gpg -d <filename.gpg>
 ```
+#### Using pass
+pass encrypts passowrds using gpg and stores them inside the ```.password-store/``` folder.  
+This directory can optionally be made into a git directory and pushed to a remote repo.  
+```pass init ""``` To remove gpg id associated with pass  
+```pass init <new-id>```To re-encrypt with new id after removing previous id  
+```pass insert <filename>```To add new entry  
+```pass show <filename>```To show password  
+```pass git push``` To push to remote repo using git
+
