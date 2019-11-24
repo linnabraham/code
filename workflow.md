@@ -6,7 +6,7 @@
 	+ i3
 	+ awesome
 + version control
-	+ git
+	+ git + github + ssh-keys
 + IDE
 	+ vim + plugins
 	+ git for version control
@@ -43,7 +43,7 @@
 		+ zotero + pdf reader
 		+ mail + ffox plugin + kindle reader
 	+ making notes
-	+ 	+ zotero + pdf annotations
+		+ zotero + pdf annotations
 + document creation
 	+ vim
 	+ texmaker #TODO: replace with vim
@@ -74,3 +74,5 @@
 + Bookmark management
 	+ ffox bookmarks
 	+ saved.io
++ clipboard management
+	+ copyq
