@@ -18,7 +18,7 @@ os.chdir('/usr/local/lib/python3.6/dist-packages/keras/backend')
 !cat __init__.py
 
 #then copy and overwrite it using:
-%%writefile __init__.pyi
+%%writefile __init__.py
 ```
 
 To use tensorboard in colab notebook, from a different notebook run the following code
@@ -64,8 +64,11 @@ change figure size globally for notebook
 ```ggVG``` Select all text in a file  
 ```:s/search/replace``` to replace first occurence of a word in the current line.
 Prepend with ```%``` to search whole text and append with ```/g``` to replace all
-occurences in a line. Search can be a ```regex``` pattern.
+occurences in a line. Search can be a ```regex``` pattern.  
 
+```ciw``` to change inner word. Replace whole word under cursor.  
+In visual block mode, you can press I to insert text at the same position in multiple lines,  
+and you can press A to append text to each line in a block.
 
 #### Using Markdown
 To italicize text use single * or _ to enclose text  
@@ -116,4 +119,17 @@ This directory can optionally be made into a git directory and pushed to a remot
 ```pass insert <filename>```To add new entry  
 ```pass show <filename>```To show password  
 ```pass git push``` To push to remote repo using git
+
+#### Using tex
+To initialize tlmgr  
+```tlmgr init-usertree```  
+To search for packages using tlmgr  
+```tlmgr info <packagename>```  
+To install packages using tlmgr  
+```tlmgr install --usermode <packaganame>```  
+
+#### Using linux
+```sudo chmod o-w``` To remove the write permission for others.  
+#### Using zathura
+a, s   Adjust window in best-fit or width mode  
 
