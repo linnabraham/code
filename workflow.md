@@ -28,6 +28,7 @@
 	+ todo-txt + dropbox + simpletask
 + ebook management
 	+ calibre
+	+ goodreads.com
 + pdf reader
 	+ evince
 	+ Foxit
@@ -80,3 +81,8 @@
 	+ saved.io
 + clipboard management
 	+ copyq
++ Data encryption
+	+ Truecrypt for linux
++ System backup
+	+ Timeshift
+
