@@ -45,8 +45,9 @@
 	+ organizing stuff
 		+ zotero + zotfile + dropbox
 	+ reading stuff
-		+ zotero + pdf reader
-		+ mail + ffox plugin + kindle reader
+		+ pdf: zotero + pdf reader
+		+ ebooks,pdfs and webpages: mail + ffox plugin + kindle reader
+		+ jupyter notebooks: nteract, jupyter
 	+ making notes
 		+ zotero + pdf annotations
 + document creation
