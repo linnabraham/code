@@ -12,6 +12,10 @@
 	+ git for version control
 	+ jupyter
 	+ colab + git + github
++ virtual environment
+	+ virtualenv
+	+ conda
+	+ pipenv #TODO
 + searching
 	+ regex
 	+ grep
