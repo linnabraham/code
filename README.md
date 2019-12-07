@@ -84,7 +84,20 @@ git checkout  <commit id>
 
 # change git remote url from https to ssh 
 git remote set-url origin  <ssh url>
+
 ```
+To undo git add
+
+```git reset file``` or ```git reset``` to unstage all changes.  
+
+To undo last commit
+```
+git reset --soft HEAD~1
+```
+Note the --soft flag: this makes sure that the changes in undone revisions are preserved. After running the command, 
+you'll find the changes as uncommitted local modifications in your working copy.
+If you don't want to keep these changes, simply use the --hard flag.
+
 #### Use dd command for creating bootable linux usb
 ```bash
 sudo dd if=path-to-iso of=/dev/sdb bs=1M --status=progress
