@@ -98,6 +98,12 @@ Note the --soft flag: this makes sure that the changes in undone revisions are p
 you'll find the changes as uncommitted local modifications in your working copy.
 If you don't want to keep these changes, simply use the --hard flag.
 
+#### Using linux
+```sudo chmod o-w``` To remove the write permission for others.  
+```gtk-launch foo``` opens foo.desktop similar to how open with functions in file manager.  
+Use ```&>/dev/null``` to redirect both stdout and stderr  
+
+
 #### Use dd command for creating bootable linux usb
 ```bash
 sudo dd if=path-to-iso of=/dev/sdb bs=1M --status=progress
@@ -141,8 +147,4 @@ To search for packages using tlmgr
 To install packages using tlmgr  
 ```tlmgr install --usermode <packaganame>```  
 
-#### Using linux
-```sudo chmod o-w``` To remove the write permission for others.  
-#### Using zathura
-a, s   Adjust window in best-fit or width mode  
 
