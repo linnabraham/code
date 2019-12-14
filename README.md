@@ -70,6 +70,7 @@ occurences in a line. Search can be a ```regex``` pattern.
 In visual block mode, you can press I to insert text at the same position in multiple lines,  
 and you can press A to append text to each line in a block.
 
+```:!pdflatex %``` to compile latex document.  
 #### Using Markdown
 To italicize text use single * or _ to enclose text  
 To use code blocks use ``` to enclose text  
@@ -91,18 +92,39 @@ To undo git add
 ```git reset file``` or ```git reset``` to unstage all changes.  
 
 To undo last commit
-```
-git reset --soft HEAD~1
-```
+```git reset --soft HEAD~1```
+
 Note the --soft flag: this makes sure that the changes in undone revisions are preserved. After running the command, 
 you'll find the changes as uncommitted local modifications in your working copy.
 If you don't want to keep these changes, simply use the --hard flag.
+
+
+To reset changes to a previous commit
+```git reset --hard```
+
+To pull a single file from a server repository in Git
+```
+git fetch  
+git checkout origin/master -- path/to/file
+```
+git fetch will download all the recent changes, but it will not put it in your current checked out code (working area).
+
+show the difference between the tips of two branches as a compact summary  
+```git diff master..test --compact-summary```
+
 
 #### Using linux
 ```sudo chmod o-w``` To remove the write permission for others.  
 ```gtk-launch foo``` opens foo.desktop similar to how open with functions in file manager.  
 Use ```&>/dev/null``` to redirect both stdout and stderr  
 
+To find open ports in linux.  
+```lsof``` command is used to list open files in Linux. Since everything is a file in Unix/Linux, an open file may be a stream or a network file.
+To list all Internet and network files, use the -i option.
+Note that this command shows a mix of service names and numeric ports.
+To find which application is listening on a particular port, run lsof in this form.
+
+```sudo lsof -i :80```  
 
 #### Use dd command for creating bootable linux usb
 ```bash
